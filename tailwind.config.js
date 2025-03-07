@@ -9,13 +9,13 @@ module.exports = {
     extend: {
       colors: {
         'primary': '#1482c8',  // Color principal
-        'secondary': '#ffed4a',  // Color secundario
-        'accent': '#38b2ac',  // Color de acento
+        'secondary': '#60a9d9',  // Color secundario
+        'accent': '#144ac7',  // Color de acento
         'fondo': '#16191d',  // Color de fondo
         'text': '#fafaff',  // Color de texto principal
         'button': '#1482c8',  // Color de botones
         'overlay': '#0b1827',  // Color de botones al pasar el mouse
-        'test': '#c1ec25',  // Color de borde
+        'test': '#f5a91b',  // Color de borde
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'], // Agrega "Inter" como una fuente personalizada

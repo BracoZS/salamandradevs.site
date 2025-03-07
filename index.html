@@ -7,107 +7,111 @@
     <link rel="stylesheet" href="css/tailwind.css">
 </head>
 
-<body class="text-text bg-background">
+<body class="text-text bg-background bg-fondo px-auto">
+
+        <!-- Navbar --> 
+        <nav class="bg-fondo"> 
+            <div class="container px-4 h-[100px] mx-auto  max-w-7xl flex  justify-between items-center ">
+                <div class="flex items-center ">  
+                    <img class="h-[36px] mr-[24px]" src="images/icono.png" alt="Logo""> 
+                    <a href="#" class="text-text text-2xl font-semibold">Salamandra Devs</a>
+                </div> 
+                <ul class="flex space-x-7    text-text mr-2">
+                    <li><a href="#inicio" class="text-text hover:text-gray-300 pb-2 border-b-2 border-transparent hover:border-primary focus:border-primary">Inicio</a></li>
+                    <li><a href="#blog" class="text-text  hover:text-gray-300 pb-2 border-b-2 border-transparent hover:border-primary focus:border-primary">Blog</a></li>
+                    <li><a href="#acercade" class="text-text hover:text-gray-300 pb-2 border-b-2 border-transparent hover:border-primary focus:border-primary">Acerca</a></li>
+                    <li><a href="#juegos" class="text-text hover:text-gray-300 pb-2 border-b-2 border-transparent hover:border-primary focus:border-primary">Juegos</a></li>
+                    <li><a href="#recursos" class="text-text hover:text-gray-300 pb-2 border-b-2 border-transparent hover:border-primary focus:border-primary">Recursos</a></li>
+                    <li><a href="#contacto" class="text-text hover:text-gray-300 pb-2 border-b-2 border-transparent hover:border-primary focus:border-primary">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
     
-    <!-- Navbar --> 
-    <nav class="bg-fondo"> 
-        <div class="h-[100px]  max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center ml-8">  
-                <img src="images/icono.png" alt="Logo" class="h-[36px] mr-[24px]"> 
-                <a href="#" class="text-text text-2xl font-semibold">Salamandra Devs</a>
-            </div> 
-            <ul class="flex space-x-6 text-text mr-2">
-                <li><a href="#" class="text-text hover:text-gray-200">Inicio</a></li>
-                <li><a href="#" class="text-text hover:text-gray-200">Blog</a></li>
-                <li><a href="#about" class="text-text hover:text-gray-200">Acerca</a></li>
-                <li><a href="#services" class="text-text hover:text-gray-200">Juegos</a></li>
-                <li><a href="#services" class="text-text hover:text-gray-200">Recursos</a></li>
-                <li><a href="#contact" class="text-text hover:text-gray-200">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
- 
-    <!-- Hero Section -->
-    <section class="h-[600px]  bg-cover" style="background-image: url('images/fondo_malla.webp');">
-        <div class="bg-overlay bg-opacity-70 h-full flex items-center justify-between">
-            <div class="ml-[100px] max-w-[750px] text-left text-text">
-                <p class="text-primary mb-3 ">Descubre más sobre lo que hacemos.</p>
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">SALAMANDRA<br> DEVS</h1> 
-                <p class="text-lg md:text-xl mb-6">Somos un grupo de ayuda para desarrolladores de software, sysadmins, tech enthusiast, data science y blockchain</p>
-                <button href="#about" class="bg-button mt-3.5  text-text py-2 px-6 rounded-xl text-lg hover:bg-blue-700 transition">Únetenos en Telegram &rarr;</button>
-            </div>
-            <div class="mr-[100px]"> 
-                <img class="h-[290px] shadow-md" src="images/salamandra.png" alt="Hero">
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Contenido -->
-    <section id="about" class="py-16 bg-fondo">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-3xl font-semibold mb-8">Acerca de Nosotros</h2>
-            <p class="text-lg text-gray-600 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
-            <button href="#services" class="hover:text-blue-800">Ver nuestros servicios</button>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-fondo text-white py-12">
-        <div class="max-w-6xl  mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            
-            <!-- Primer grupo: Icono arriba y 4 Iconos de redes abajo -->
-            <div class="flex flex-col items-start">
-                <div class="mb-4 ">
-                    <img src="images/icono.png" alt="Icono 1" class="h-9 w-9">
+        <!-- Hero Section -->  
+        <section class="h-[600px] w-full bg-cover bg-center relative" style="background-image: url('images/fondo_malla.webp');">
+            <div class="absolute inset-0 bg-overlay/40"></div>
+            <div class="container px-4 relative mx-auto  max-w-7xl  h-full flex items-center justify-between">
+                <div class=" max-w-[750px]  text-left text-text">
+                    <p class="text-secondary mb-3 ">Descubre más sobre lo que hacemos.</p>
+                    
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 ">SALAMANDRA<br class="mb-2 "> DEVS</h1> 
+                    
+                    <p class="text-lg md:text-xl mb-6 max-w-[650px]">Somos un grupo de ayuda para desarrolladores de software, sysadmins, tech enthusiast, data science y blockchain</p>
+                    
+                    <button href="#about" class="bg-button mt-2 text-text py-2 px-6 rounded-xl text-lg hover:bg-accent transition">Únetenos en Telegram &rarr;</button>
                 </div>
-                <div class="flex space-x-4">
-                    <img src="images/x.png" alt="Icono 2" class="h-6 w-6">
-                    <img src="images/telegram.png" alt="Icono 3" class="h-6 w-6">
-                    <img src="images/youtube.png" alt="Icono 4" class="h-6 w-6">
-                    <img src="images/linkedin.png" alt="Icono 5" class="h-6 w-6">
+                <div class="max-w-[260px] h-auto shadow-md mr-[100px]"> 
+                    <img src="images/salamandra.png" alt="Hero">
                 </div>
             </div>
-    
-            <!-- Segundo grupo: Título y lista de elementos -->
-            <div>
-                <h3 class="text-xl font-semibold mb-4">Áreas </h3>
-                <ul class="space-y-2">
-                    <li><a href="#" class="font-light hover:text-gray-400">UI Design</a></li>
-                    <li><a href="#" class="font-light  hover:text-gray-400">UX Design</a></li>
-                    <li><a href="#" class="font-light  hover:text-gray-400">Arquitectura de software</a></li>
-                    <li><a href="#" class="font-light  hover:text-gray-400">Back-end</a></li>
-                    <li><a href="#" class="font-light hover:text-gray-400">QA</a></li>
-                    <li><a href="#" class="font-light hover:text-gray-400">Soporte Técinco</a></li>
-                </ul>
+        </section>
+
+        <!-- Sección de Contenido -->
+        <section id="about" class="py-16 bg-fondo">
+            <div class="max-w-7xl mx-auto text-center">
+                <h2 class="text-3xl font-semibold mb-8">Acerca de Nosotros</h2>
+                <p class="text-lg text-gray-600 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
+                <button href="#services" class="hover:text-blue-800">Ver nuestros servicios</button>
             </div>
-    
-            <!-- Tercer grupo: Título y lista de elementos -->
-            <div>
-                <h3 class="text-xl font-semibold mb-4">Explore</h3>
-                <ul class="space-y-2">
-                    <li><a href="#" class="font-light hover:text-gray-400">Diseño</a></li>
-                    <li><a href="#" class="font-light hover:text-gray-400">Prototipado</a></li>
-                    <li><a href="#" class="font-light hover:text-gray-400">Desarrollo de características</a></li>
-                    <li><a href="#" class="font-light hover:text-gray-400">Diseño de sistemas</a></li>
-                    <li><a href="#" class="font-light hover:text-gray-400">FigJam</a></li>
-                </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-fondo text-white py-12">
+            <div class="max-w-6xl  mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                
+                <!-- Primer grupo: Icono arriba y 4 Iconos de redes abajo -->
+                <div class="flex flex-col items-start">
+                    <div class="mb-4 ">
+                        <img src="images/icono.png" alt="Icono 1" class="h-9 w-9">
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#"><img src="images/x.png" alt="Icono 2" class="h-6 w-6"></a> 
+                        <a href="#"><img src="images/telegram.png" alt="Icono 3" class="h-6 w-6"></a>
+                        <a href="#"><img src="images/youtube.png" alt="Icono 4" class="h-6 w-6"></a>
+                        <a href="#"><img src="images/linkedin.png" alt="Icono 5" class="h-6 w-6"></a>
+                    </div>
+                </div>
+        
+                <!-- Segundo grupo: Título y lista de elementos -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Áreas </h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="font-light hover:text-gray-400">UI Design</a></li>
+                        <li><a href="#" class="font-light  hover:text-gray-400">UX Design</a></li>
+                        <li><a href="#" class="font-light  hover:text-gray-400">Arquitectura de software</a></li>
+                        <li><a href="#" class="font-light  hover:text-gray-400">Back-end</a></li>
+                        <li><a href="#" class="font-light hover:text-gray-400">QA</a></li>
+                        <li><a href="#" class="font-light hover:text-gray-400">Soporte Técinco</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Tercer grupo: Título y lista de elementos -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Explore</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="font-light hover:text-gray-400">Diseño</a></li>
+                        <li><a href="#" class="font-light hover:text-gray-400">Prototipado</a></li>
+                        <li><a href="#" class="font-light hover:text-gray-400">Desarrollo de características</a></li>
+                        <li><a href="#" class="font-light hover:text-gray-400">Diseño de sistemas</a></li>
+                        <li><a href="#" class="font-light hover:text-gray-400">FigJam</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Cuarto grupo: Título y lista de elementos -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Recursos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="font-light hover:text-gray-400">Blog</a></li>
+                        <li><a href="#" class="font-light hover:text-gray-400">Miembros</a></li>
+                        <li><a href="#" class="font-light hover:text-gray-400">Soporte</a></li>
+                        <li><a href="#" class="font-light hover:text-gray-400">Juegos</a></li>
+                        <li><a href="#" class="font-light hover:text-gray-400">Contacto</a></li>
+                    </ul>
+                </div>
+        
             </div>
-    
-            <!-- Cuarto grupo: Título y lista de elementos -->
-            <div>
-                <h3 class="text-xl font-semibold mb-4">Recursos</h3>
-                <ul class="space-y-2">
-                    <li><a href="#" class="font-light hover:text-gray-400">Blog</a></li>
-                    <li><a href="#" class="font-light hover:text-gray-400">Miembros</a></li>
-                    <li><a href="#" class="font-light hover:text-gray-400">Soporte</a></li>
-                    <li><a href="#" class="font-light hover:text-gray-400">Juegos</a></li>
-                    <li><a href="#" class="font-light hover:text-gray-400">Contacto</a></li>
-                </ul>
-            </div>
-    
-        </div>
-    </footer>
-    
+        </footer>
+
 
 
     <script src="js/app.js"></script>
