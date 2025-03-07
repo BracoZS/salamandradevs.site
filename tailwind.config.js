@@ -4,6 +4,7 @@ module.exports = {
     "./index.html",         // Archivo HTML principal
     "./css/**/*.css",     // Archivos CSS dentro de la carpeta css
     "./js/**/*.js",       // Archivos JS dentro de la carpeta js
+    "./**/*.html",       
   ],
   theme: {
     extend: {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salamandra Devs</title>
-    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="/css/tailwind.css">
 </head>
 
 <body class="text-text bg-background bg-fondo px-auto">
@@ -13,14 +13,14 @@
         <nav class="bg-fondo"> 
             <div class="container px-4 h-[100px] mx-auto  max-w-7xl flex  justify-between items-center ">
                 <div class="flex items-center ">  
-                    <img class="h-[36px] mr-[24px]" src="images/icono.png" alt="Logo""> 
+                    <img class="h-[36px] mr-[24px]" src="/images/icono.png" alt="Logo""> 
                     <a href="#" class="text-text text-2xl font-semibold">Salamandra Devs</a>
                 </div> 
                 <ul class="flex space-x-7    text-text mr-2">
-                    <li><a href="/index.html" class="text-text border-primary hover:text-gray-300 pb-2 border-b-2 hover:border-primary focus:border-primary">Inicio</a></li>
+                    <li><a href="/index.html" class="text-text hover:text-gray-300 pb-2 border-b-2 border-transparent hover:border-primary focus:border-primary">Inicio</a></li>
                     <li><a href="#blog" class="text-text  hover:text-gray-300 pb-2 border-b-2 border-transparent hover:border-primary focus:border-primary">Blog</a></li>
                     <li><a href="#acercade" class="text-text hover:text-gray-300 pb-2 border-b-2 border-transparent hover:border-primary focus:border-primary">Acerca</a></li>
-                    <li><a href="/content/juegos/juegos.html" class="text-text hover:text-gray-300 pb-2 border-b-2 border-transparent hover:border-primary focus:border-primary">Juegos</a></li>
+                    <li><a href="/content/juegos/juegos.html" class="text-text border-primary  hover:text-gray-300 pb-2 border-b-2 active  hover:border-primary focus:border-primary">Juegos</a></li>
                     <li><a href="#recursos" class="text-text hover:text-gray-300 pb-2 border-b-2 border-transparent hover:border-primary focus:border-primary">Recursos</a></li>
                     <li><a href="#contacto" class="text-text hover:text-gray-300 pb-2 border-b-2 border-transparent hover:border-primary focus:border-primary">Contacto</a></li>
                 </ul>
@@ -28,49 +28,57 @@
         </nav>
     
         <!-- Hero Section -->  
-        <section class="h-[600px] w-full bg-cover bg-center relative" style="background-image: url('images/fondo_malla.webp');">
+        <section class="h-[600px] w-full bg-cover bg-center relative" style="background-image: url('/images/fondo_malla.webp');">
             <div class="absolute inset-0 bg-overlay/40"></div>
             <div class="container px-4 relative mx-auto  max-w-7xl  h-full flex items-center justify-between">
-                <div class="max-w-[750px]  text-left text-text">
-                    <p class="text-secondary mb-3 ">Descubre más sobre lo que hacemos.</p>
+                <div class=" max-w-[750px]  text-left text-text">
+                    <p class="text-secondary mb-3 ">Pequeños juegos, gran diversión</p>
                     
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4 ">SALAMANDRA<br class="mb-2 "> DEVS</h1> 
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 ">Zona de<br class="mb-2 "> Juegos</h1> 
                     
-                    <p class="text-lg md:text-xl mb-6 max-w-[650px]">Somos un grupo de ayuda para desarrolladores de software, sysadmins, tech enthusiast, data science y blockchain</p>
+                    <p class="text-lg md:text-xl mb-6 max-w-[650px]">
+                        ¡Diviértete al máximo con nuestra colección de minijuegos! Juega, compite y desafía tus habilidades con juegos rápidos y entretenidos para todos. ¿Listo para empezar?
+                    </p> 
                     
-                    <button href="#about" class="bg-button mt-2 text-text py-2 px-6 rounded-xl text-lg hover:bg-accent transition">Únetenos en Telegram &rarr;</button>
+                    <button href="#about" class="bg-button mt-2 text-text py-2 px-6 rounded-xl text-lg hover:bg-accent transition">
+                        ¡Vamos! &rarr;
+                    </button>
                 </div>
                 <div class="max-w-[260px] h-auto shadow-md mr-[100px]"> 
                     <img src="/images/salamandra.png" alt="Hero">
-                </div> 
+                </div>
             </div>
         </section>
 
         <!-- Sección de Contenido -->
-        <section id="about" class="py-16 bg-fondo">
-            <div class="max-w-7xl mx-auto text-center">
-                <h2 class="text-3xl font-semibold mb-8">Acerca de Nosotros</h2>
-                <p class="text-lg text-gray-600 mb-8">Hola, como verás este sitio está en construcción; pero lo mágico es que lo estamos construyendo entre todos los miembros del canal. Así que entra a Salamandra Devs en Telegram y cuéntanos qué cambio quieres hacer; puede ser un color, un botón, una imagen, lo que sea.
-
-                    Nuestro repositorio de GitHub lo puedes encontrar <a class="text-accent" href="https://github.com/salamandradevs/salamandradevs.site">aquí</a>. ¡Adelante! Crea un fork y muéstranos lo que quieres hacer.</p>
-                <button href="#services" class="hover:text-blue-800">Ver nuestros servicios</button>
-            </div>
+        <section class="h-[1000px] py-16 bg-fondo"> 
+            <div class="container flex justify-center">
+                
+                <div class="border rounded overflow-hidden shadow-lg bg-gray-800 p-10 pt-2 w-auto h-auto">
+                    <div class="py-4 pb-8 "> 
+                        <h2 class="font-bold text-text text-xl mb-2">SNAKE GAME</h2>
+                        <p class="text-text ">Juego de la viborita con disparos, hecho por @VladImpaler64</p>
+                    </div>
+                    <iframe class="w-[700px] h-[700px] rounded-2xl" src="/content/juegos/snake/juego.html" ></iframe>
+                </div>
+                
+            </div> 
         </section>
 
         <!-- Footer -->
-        <footer class="bg-fondo text-white py-12">
+        <footer class="bg-fondo  text-white py-12">
             <div class="max-w-6xl  mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 
                 <!-- Primer grupo: Icono arriba y 4 Iconos de redes abajo -->
                 <div class="flex flex-col items-start">
                     <div class="mb-4 ">
-                        <img src="images/icono.png" alt="Icono 1" class="h-9 w-9">
+                        <img src="/images/icono.png" alt="Icono 1" class="h-9 w-9">
                     </div>
                     <div class="flex space-x-4">
-                        <a href="#"><img src="images/x.png" alt="Icono 2" class="h-6 w-6"></a> 
-                        <a href="#"><img src="images/telegram.png" alt="Icono 3" class="h-6 w-6"></a>
-                        <a href="#"><img src="images/youtube.png" alt="Icono 4" class="h-6 w-6"></a>
-                        <a href="#"><img src="images/linkedin.png" alt="Icono 5" class="h-6 w-6"></a>
+                        <a href="#"><img src="/images/x.png" alt="Icono 2" class="h-6 w-6"></a> 
+                        <a href="#"><img src="/images/telegram.png" alt="Icono 3" class="h-6 w-6"></a>
+                        <a href="#"><img src="/images/youtube.png" alt="Icono 4" class="h-6 w-6"></a>
+                        <a href="#"><img src="/images/linkedin.png" alt="Icono 5" class="h-6 w-6"></a>
                     </div>
                 </div>
         
@@ -116,6 +124,6 @@
 
 
 
-    <script src="js/app.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>
