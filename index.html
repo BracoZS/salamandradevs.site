@@ -7,58 +7,175 @@
     <link rel="stylesheet" href="css/tailwind.css">
 </head>
 
-<body class="text-text bg-background bg-fondo px-auto">
+<body class="bg-background bg-fondo px-auto text-text">
 
         <!-- Navbar --> 
-        <nav class="bg-fondo"> 
-            <div class="container px-4 h-[100px] mx-auto  max-w-7xl flex  justify-between items-center ">
+        <nav class="bg-isla"> 
+            <div class="container px-4 h-[100px] mx-auto max-w-7xl flex justify-between items-center">
+                <!-- Logo -->
                 <div class="flex items-center ">  
                     <img class="h-[36px] mr-[24px]" src="./images/icono.png" alt="Logo"> 
                     <a href="#" class="text-text text-2xl font-semibold">Salamandra Devs</a>
                 </div> 
-                <ul class="flex space-x-7    text-text mr-2">
-                    <li><a href="./index.html" class="text-text border-primary hover:text-gray-300 pb-2 border-b-2 hover:border-primary focus:border-primary">Inicio</a></li>
-                    <li><a href="#blog" class="text-text  hover:text-gray-300 pb-2 border-b-2 border-transparent hover:border-primary focus:border-primary">Blog</a></li>
-                    <li><a href="#acercade" class="text-text hover:text-gray-300 pb-2 border-b-2 border-transparent hover:border-primary focus:border-primary">Acerca</a></li>
-                    <li><a href="./pages/juegos.html" class="text-text hover:text-gray-300 pb-2 border-b-2 border-transparent hover:border-primary focus:border-primary">Juegos</a></li>
-                    <li><a href="#recursos" class="text-text hover:text-gray-300 pb-2 border-b-2 border-transparent hover:border-primary focus:border-primary">Recursos</a></li>
-                    <li><a href="#contacto" class="text-text hover:text-gray-300 pb-2 border-b-2 border-transparent hover:border-primary focus:border-primary">Contacto</a></li>
+
+                <!-- Botón de menú (solo visible en móviles) -->
+                <button id="menu-toggler" class="md:hidden text-text focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+                <!-- Menú  de navegación-->
+                <ul id="menu" class="hidden md:flex space-x-7 text-text mr-2
+                                     ">
+                    <li><a href="./index.html" 
+                         class="pb-2 border-b-2 text-text border-sal-600   hover:text-sal-50 hover:border-primary active ">Inicio</a></li>
+
+                    <li><a href="#blog"
+                         class="pb-2 border-b-2 text-text border-transparent hover:text-sal-50 hover:border-primary">Blog</a></li>
+                    
+                    <li><a href="#acercade"
+                         class="pb-2 border-b-2 text-text border-transparent hover:text-sal-50 hover:border-primary">Acerca</a></li>
+                    
+                    <li><a href="./pages/juegos.html"
+                         class="pb-2 border-b-2 text-text border-transparent hover:text-sal-50 hover:border-primary">Juegos</a></li>
+                    
+                    <li><a href="#recursos"
+                         class="pb-2 border-b-2 text-text border-transparent hover:text-sal-50 hover:border-primary">Recursos</a></li>
+                    
+                    <li><a href="#contacto"
+                         class="pb-2 border-b-2 text-text border-transparent hover:text-sal-50 hover:border-primary">Contacto</a></li>
                 </ul>
             </div>
         </nav>
-    
+     
         <!-- Hero Section -->  
         <section class="h-[600px] w-full bg-cover bg-center relative" style="background-image: url('images/fondo_malla.webp');">
-            <div class="absolute inset-0 bg-overlay/40"></div>
-            <div class="container px-4 relative mx-auto  max-w-7xl  h-full flex items-center justify-between">
-                <div class="max-w-[750px]  text-left text-text">
-                    <p class="text-secondary mb-3 ">Descubre más sobre lo que hacemos.</p>
-                    
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4 ">SALAMANDRA<br class="mb-2 "> DEVS</h1> 
-                    
-                    <p class="text-lg md:text-xl mb-6 max-w-[650px]">Somos un grupo de ayuda para desarrolladores de software, sysadmins, tech enthusiast, data science y blockchain</p>
-                    
-                    <button href="#about" class="bg-button mt-2 text-text py-2 px-6 rounded-xl text-lg hover:bg-accent transition">Únetenos en Telegram &rarr;</button>
+            
+                <div class="absolute inset-0 bg-overlay/40 shadow-inner"></div>
+                <div class="container px-4 relative mx-auto  max-w-7xl  h-full flex items-center justify-between">
+                    <div class="max-w-[750px]  text-left text-text">
+                        <p class="text-sal-500 mb-3 ">Descubre más sobre lo que hacemos.</p>
+                        
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4 ">SALAMANDRA<br class="mb-2"> DEVS</h1> 
+                        
+                        <p class="text-lg md:text-xl mb-6 max-w-[650px]">Somos un grupo de ayuda para desarrolladores de software, sysadmins, tech enthusiast, data science y blockchain</p>
+                        
+                        <button href="#about" class="bg-sal-500 mt-2 text-sa py-2 px-6 rounded-xl text-lg hover:bg-sal-600 transition">Únetenos en Telegram &rarr;</button>
+                    </div>
+                    <div class=" max-w-[260px] h-auto mr-[100px]"> 
+                        <img src="images/salamandra.png" alt="Hero">
+                    </div> 
                 </div>
-                <div class="max-w-[260px] h-auto shadow-md mr-[100px]"> 
-                    <img src="images/salamandra.png" alt="Hero">
-                </div> 
-            </div>
+
         </section>
 
         <!-- Sección de Contenido -->
-        <section id="about" class="py-16 bg-fondo">
-            <div class="max-w-7xl mx-auto text-center">
-                <h2 class="text-3xl font-semibold mb-8">Acerca de Nosotros</h2>
-                <p class="text-lg text-gray-600 mb-8">Hola, como verás este sitio está en construcción; pero lo mágico es que lo estamos construyendo entre todos los miembros del canal. Así que entra a Salamandra Devs en Telegram y cuéntanos qué cambio quieres hacer; puede ser un color, un botón, una imagen, lo que sea.
+        <section id="about" class="py-8 bg-fondo">
+            <div class="max-w-7xl mx-auto text-left container px-4">
 
-                    Nuestro repositorio de GitHub lo puedes encontrar <a class="text-accent" href="https://github.com/salamandradevs/salamandradevs.site">aquí</a>. ¡Adelante! Crea un fork y muéstranos lo que quieres hacer.</p>
-                <button href="#services" class="hover:text-blue-800">Ver nuestros servicios</button>
+                <div class="border border-gray-800 rounded-lg p-4 mx-4 mt-8">
+                    <h2 class="text-2xl font-semibold text-slate-400">Acerca de Nosotros</h2>
+                    <hr class="mb-8 mt-2 border-gray-700">
+                    <p class="text-lg mt-4 text-text leading-relaxed tracking-wide">
+                        Somos un grupo ayuda para desarrolladores de software, administradores de servidores, entusiastas de la tecnología, videojuegos,  ciencias de datos, la blockchain, HTML/CSS/JS.
+                        <br><br>
+                        Este sitio es un desarrollo comunitario liderado desde Salamandra Devs con el apoyo de su comunidad de Telegram.
+                        <br><br> 
+
+                        Como verás, este sitio está en construcción; pero lo mágico es que lo estamos construyendo entre todos los miembros del canal. Así que entra a Salamandra Devs en Telegram y cuéntanos qué cambio quieres hacer; puede ser un color, un botón, una imagen, lo que sea.
+
+                        Nuestro repositorio de GitHub lo puedes encontrar <a class="text-sal-600 " href="https://github.com/salamandradevs/salamandradevs.site">aquí</a>. ¡Adelante! Crea un fork y muéstranos lo que quieres hacer.
+                    </p>
+                </div>
+                  
+                <div class="border border-gray-800 rounded-lg p-4 mx-4 mt-8"> 
+                    <h2 class="text-2xl font-semibold text-slate-400">Contribuir</h2>
+                    <hr class="mb-8 mt-2 border-gray-700"> 
+                    <p class="text-lg mt-4 text-text leading-relaxed tracking-wide">
+                        Puedes ayudar a la construcción del sitio con tus contribuciones mientras vas aprendiendo.
+                        Solo tienes que hacer un fork de este repositorio para que lo tengas en tu cuenta de GitHub, luego lo clonas en tu equipo local, creas una nueva rama con un nombre alusivo al cambio que desees hacer, como por ejemplo "cambio-color" o "nuevo-botón" y te cambias a ella (git checkout -b nuevo-boton), realizas los cambios que desees y luego haces push a tu repositorio remoto (git push origin nuevo-boton). Esto te permitirá crear él pull-request en GitHub, con el que tu cambio será analizado por el equipo e incorporado a la página principal después de discutirlo contigo.
+
+                        También, debes ingresar al grupo de Telegram aquí, allí te ayudaremos con el proceso para que finalmente te hagas parte del proyecto y aprendas junto con la comunidad. No es necesario que seas un desarrollador experimentado, solo que tengas unos fundamentos mínimos de CSS y HTML, cualquier otra cosa es útil también, pero con esto bastará para que aprendas mucho.
+                    </p>
+                </div> 
+                  
+                <div class="border border-gray-800 rounded-lg p-4 mx-4 mt-8"> 
+                    <h2 class="text-2xl font-semibold text-slate-400">Equipo</h2>
+                    <hr class="mb-8 mt-2 border-gray-700"> 
+                    <p class="text-lg mt-4 text-text leading-relaxed tracking-wide">
+                        El equipo de Salamandra Devs lo conforman los colaboradores más activos del sitio web y del chat de Télegram.
+                        Por tanto siempre hay oportunidades de formar parte del equipo, solo tienes que empezar a compartir tu conocimiento en Telegram y colaborar con el sitio web.
+                        <br><br>
+                        ¡Conoce a nuestros desarrolladores! justo donde podrías estar tú.
+                    </p>
+                   <br> 
+                    
+                    <table class="table-auto border mx-4 my-4 ">
+                        <thead class="">
+                          <tr>
+                            <th class="border-b border-gray-700 px-4 py-3">Nombre</th>
+                            <th class="border-b border-gray-700 px-4 py-3">Profesión/Habilidades</th>
+                            <th class="border-b border-gray-700 px-4 py-3">Karma</th>
+                            <th class="border-b border-gray-700 px-4 py-3">Avatar</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr class="border-b border-gray-800 hover:bg-gray-800">
+                            <td class="px-4 py-3">Odair Trujillo</td>
+                            <td class="px-4 py-3">Desarrollador web y blockchain</td>
+                            <td class="px-4 py-3">El admin</td>
+                            <td class="px-4 py-3"><img class="w-10 h-10 rounded" src="https://salamandradevs.site/about/team/odair.jpg"></td>
+                          </tr>
+                          <tr class="border-b border-gray-800 hover:bg-gray-800">
+                            <td class="px-4 py-3">Eugenio Llanos</td>
+                            <td class="px-4 py-3">Analista de datos, backend dev</td>
+                            <td class="px-4 py-3">Elevado</td>
+                            <td class="px-4 py-3"><img class="w-10 h-10 rounded" src="https://salamandradevs.site/about/team/eugenio.jpg"></td>
+                          </tr>
+                          <tr class="border-b border-gray-800 hover:bg-gray-800">
+                            <td class="px-4 py-3">Nicolás Llanos</td>
+                            <td class="px-4 py-3">Desarrollador backend, bot dev</td>
+                            <td class="px-4 py-3">Intermedio</td>
+                            <td class="px-4 py-3"><img class="w-10 h-10 rounded" src="https://salamandradevs.site/about/team/nicolas.jpg"></td>
+
+                          </tr>
+                          <tr class="hover:bg-gray-800">
+                            <td class="px-4 py-3">Ricardo García</td>
+                            <td class="px-4 py-3">Desarrollador frontend</td>
+                            <td class="px-4 py-3">Principiante</td>
+                            <td class="px-4 py-3"><img class="w-10 h-10 rounded" src="https://salamandradevs.site/about/team/ricardo.jpg"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      
+
+                </div> 
+
+                <div class="border border-gray-800 rounded-lg p-4 mx-4 mt-8"> 
+                    <h2 class="text-2xl font-semibold text-slate-400">
+                        Historia
+                    </h2>
+                    <hr class="mb-8 mt-2 border-gray-700"> 
+                    <p class="text-lg mt-4 text-text leading-relaxed tracking-wide">
+                        Internet está lleno de comunidades enormes y maravillosas de desarrolladores de software, administradores de servidores, científicos de datos, entusiastas de los vídeo juegos, los dispositivos embebidos y más, mucho más.
+                         Salmandra Devs no hace nada distinto a todo lo que ya existe, pero sí recoge muchas visiones sobre cómo una comunidad tecnológica debería funcionar.
+
+                        Cuando nos planteamos crear la comunidad de Salamandra Devs en el año 2022, todo inició como un canal de Telegram para ayudar, rápidamente incorporó un exitoso canal de Youtube con tutoriales y cursos de alta calidad totalmente gratuitos,
+                         hasta llegar a convertirse en una comunidad con la que te puedes apoyar para avanzar en tus estudios o tus proyectos, con un blog comunitario de excelente calidad en sus publicaciones.
+                    </p>
+                </div> 
+                
+                <button href="#services" class="mt-8 mx-4 hover:text-blue-800">Ver nuestros servicios</button>
+            
             </div>
         </section>
 
         <!-- Footer -->
-        <footer class="bg-fondo text-white py-12">
+        <footer class="bg-isla text-white py-12">
             <div class="max-w-6xl  mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 
                 <!-- Primer grupo: Icono arriba y 4 Iconos de redes abajo -->
@@ -115,7 +232,14 @@
         </footer>
 
 
-
-    <script src="js/app.js"></script>
+        <!-- Scripts -->
+        <script>
+            const menuToggle = document.getElementById("menu-toggler");
+            const menu = document.getElementById("menu");
+        
+            menuToggle.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
 </body>
 </html>
