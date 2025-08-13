@@ -1,0 +1,37 @@
+---
+const currentYear =  new  Date().getFullYear();
+
+const footerlinks = [
+  {
+    title: "Comunidad",
+    links: [
+      { text: "Inicio", url: "/"},
+      { text: "Frontend", url: "/frontend"},
+      { text: "Backend", url: "/backend"},
+      { text: "Blockchain", url: "/blockchain"},
+      { text: "Ciencia de datos", url: "/datascience"},
+      { text: "Videojuegos", url: "/games"}
+    ]
+  },
+  /* Aportar con links para el sitio  */
+  {
+    title: "Resources",
+    links: [
+      { text: "Blog", url: "/blog" },
+      { text: "Contacto", url: "/contact" },
+      { text: "Sobre nosotros", url: "/about" },
+    ]
+  },
+  {
+    title: "",
+    links: [
+      { text: "", url:"/ "},
+      { text: "", url:"/" }
+    ]
+  }
+]
+---
+
+<footer class="bg-black text-white w-full">
+ Hecho por Bracozs y ... ©{currentYear}
+</footer>
