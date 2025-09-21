@@ -1,30 +1,45 @@
 @import "tailwindcss";
 
 @theme {
-     /* Colores */
+    /*** Colores ***/    
+    /* Background */
+    --color-backgr: #0B0F17;
+    --color-surface: #131A24;
 
-    /* rellenar hasta el 950 */
-    --color-sal-50: #ffffff; 
-    --color-sal-900: #21374a;
+    /* Primary (sky) */
+    --color-sky-50:  #4785b0;
 
-    --color-secondary-50: #ffffff;
+    /* Text Colors */
+    --color-texto: #f1f1f1;
+    --color-muted: #A0AEC0;
 
+    /* Borders / Surfaces */
+    --color-borders: #38506c;
 
-    --color-accent-50: #ffffff;
+    /* State Colors */
+    --color-success-500: #00B894;
+    --color-error-500: #FF5252;
+    --color-warning-500: #FFC107;
+    --color-info-500: #00ACC1;
 
-
-    --color-warning-50: #ffffff;
-
-
-
-    /* Fuentes */
+    /*** Fuentes ***/
+    --font-inter: Inter;
     --font-sans: Inter, system-ui, sans-serif;
     --font-display: "Exo 2", system-ui, sans-serif;
 }
-
 
 @layer base {
     h1, h2, h3, h4, h5, h6 {
         @apply font-display;
     }
+}
+
+/* Debug utilities */
+@utility line {
+    outline: 1px solid red;
+}
+
+@utility line-* {
+    outline: 1px solid --value('red', 'green', 'blue', 'purple', 'yellow', 'orange', 'pink', 'teal', 'cyan');
+    outline: 1px solid --value([*]);
 }

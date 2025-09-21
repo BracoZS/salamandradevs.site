@@ -1,7 +1,8 @@
 ---
+import Header from '../components/Header.astro';
 import '../styles/global.css';
 
-/* define los tipos */
+/* definir los tipos */
 export interface Props {
 	titulo: string;
 	descripcion?: string
@@ -9,7 +10,7 @@ export interface Props {
 
 const {
 	titulo,
-	descripcion = "Somos un grupo de ayuda para desarrolladores de software, sysadmins, tech enthusiast, data science y blockchain."
+	descripcion = "Somos una comunidad inclusiva y colaborativa donde nos unimos para compartir conocimiento, resolvemos dudas, colaboramos en proyectos y sobre todo... !crecemos juntos!"
 } = Astro.props;
 ---  
 
@@ -17,18 +18,23 @@ const {
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="icon.png" />
+		<meta name="description" content={descripcion} />
 		<meta name="generator" content={Astro.generator} />
+
 		<title>{titulo}</title>
-		<!-- Fuentes -->
+
+		<!-- Fuentes Inter, Exo2 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	</head>
-	<body class="antiliased">
+	<body class="font-inter bg-backgr text-texto overflow-hidden">
+  	<Header /> 
 		<slot />
+		
 	</body>
 </html>
 
